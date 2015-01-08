@@ -1,1 +1,4 @@
 language: objective-c
+script:
+  - xctool -workspace Test.xcworkspace -scheme TestTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -workspace Test.xcworkspace -scheme TestTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
